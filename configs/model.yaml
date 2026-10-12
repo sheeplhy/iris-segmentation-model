@@ -1,0 +1,22 @@
+model:
+  encoder: vit_small_patch14_dinov2.lvd142m
+  pretrained: true
+  input_height: 448
+  input_width: 672
+  decoder_channels: 128
+  dropout: 0.1
+
+loss:
+  iris: 1.0
+  eye_region: 1.0
+  pupil: 0.15
+  occlusion_boundary: 0.15
+  hierarchy: 0.1
+
+inference:
+  threshold: 0.5
+  eye_region_threshold: 0.5
+  overlap: 0.33
+  scales: [0.75, 1.0, 1.25]
+  global_weight: 0.25
+  min_component_ratio: 0.0

@@ -1,0 +1,10 @@
+name: one_hot_background_sclera_iris
+format: color_mask
+image_dirs: [Images, images, JPEGImages]
+mask_dirs: [Masks, masks, SegmentationClass]
+colors:
+  background: [1, 0, 0]
+  sclera: [0, 1, 0]
+  iris: [0, 0, 1]
+primary_union: [iris]
+boundary_annotation: unavailable

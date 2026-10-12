@@ -1,0 +1,24 @@
+training:
+  max_epochs: 120
+  batch_size: 2
+  gradient_accumulation: 4
+  learning_rate: 0.0001
+  encoder_lr_factor: 0.1
+  incremental_lr_factor: 0.33
+  weight_decay: 0.0001
+  warmup_epochs: 5
+  freeze_encoder_epochs: 5
+  early_stopping_patience: 20
+  num_workers: 2
+  seed: 66
+  amp: true
+  global_view_probability: 0.5
+  positive_crop_probability: 0.8
+  crop_context_min: 1.5
+  crop_context_max: 4.0
+  crop_center_jitter: 0.15
+  quality_weights:
+    clear: 1.0
+    unclear: 1.0
+    blur: 1.0
+    unknown: 1.0

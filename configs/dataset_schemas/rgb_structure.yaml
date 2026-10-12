@@ -1,0 +1,12 @@
+name: rgb_structure
+format: color_mask
+image_dirs: [Images, images, JPEGImages]
+mask_dirs: [Masks, masks, SegmentationClass]
+colors:
+  background: [0, 0, 0]
+  sclera: [255, 0, 0]
+  iris: [0, 255, 0]
+  pupil: [0, 0, 255]
+primary_union: [iris, pupil]
+boundary_annotation: unavailable
+

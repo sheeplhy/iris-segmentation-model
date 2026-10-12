@@ -1,0 +1,6 @@
+name: binary_iris
+format: binary_mask
+image_dirs: [Images, images, JPEGImages]
+mask_dirs: [Masks, masks, SegmentationClass]
+boundary_annotation: unavailable
+
